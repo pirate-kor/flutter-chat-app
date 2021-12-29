@@ -1,3 +1,4 @@
+import 'package:chatapp/theme.dart';
 import 'package:chatapp/view/welcome.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,9 @@ class ChatApp extends StatelessWidget {
     return MaterialApp(
       title: "Chat App - clon code",
       debugShowCheckedModeBanner: false,
+      theme: lightThemeData(context),
+      darkTheme: darkThemeData(context),
+      themeMode: ThemeMode.dark, 
       home: const WelcomeView(),
     );
   }
