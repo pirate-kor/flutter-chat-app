@@ -1,5 +1,10 @@
-import 'package:chatapp/contants/paddings.dart';
 import 'package:flutter/material.dart';
+
+/**
+ * 12/29 배운 것
+ * - Theme.of 로 테마 설정에 따라 색상이 다르게 적용되는 것 
+ * - theme.dart 내용 복습 
+ */
 
 class WelcomeView extends StatelessWidget {
   const WelcomeView({Key? key}) : super(key: key);
@@ -12,7 +17,7 @@ class WelcomeView extends StatelessWidget {
         Spacer(
           flex: 2,
         ),
-        Image.asset("assets/images/icon.png"),
+        Image.asset("assets/images/welcome_image.png"),
         Spacer(
           flex: 3,
         ),
