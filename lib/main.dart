@@ -19,7 +19,7 @@ class ChatApp extends StatelessWidget {
       darkTheme: darkThemeData(context),
       themeMode: ThemeMode.system, 
       // home: const WelcomeView(),
-      home: SigninOrSignUpView()
+      home: WelcomeView()
     );
   }
 }
