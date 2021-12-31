@@ -3,6 +3,7 @@ import 'package:chatapp/contants/colors.dart';
 import 'package:chatapp/contants/paddings.dart';
 import 'package:chatapp/models/chat.dart';
 import 'package:chatapp/view/chats/components/chat.dart';
+import 'package:chatapp/view/messages/message.dart';
 import 'package:flutter/material.dart';
 
 class ChatBody extends StatelessWidget {
@@ -31,9 +32,11 @@ class ChatBody extends StatelessWidget {
         ),
         Expanded(
           child: ListView.builder(
-            itemCount: chatsData.length,
-              itemBuilder: (context, index) =>
-                  ChatLine(chat: chatsData[index], press: () {})),
+              itemCount: chatsData.length,
+              itemBuilder: (context, index) => ChatLine(
+                  chat: chatsData[index],
+                  press: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MessageView())))),
         )
       ],
     );

@@ -1,5 +1,4 @@
 import 'package:chatapp/theme.dart';
-import 'package:chatapp/view/sign/sign.dart';
 import 'package:chatapp/view/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
