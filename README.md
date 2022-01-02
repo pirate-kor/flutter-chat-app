@@ -1,16 +1,10 @@
-# chatapp
+# Chat Messaging App for Flutter 
+### 유튜브 영상보고 따라하기
 
-A new Flutter project.
+- [Youtube - The Flutter way](https://www.youtube.com/watch?v=uiJF-ShOLyo) (참고. [Git - abuanwar072](https://github.com/abuanwar072/Chat-Messaging-App-Light-and-Dark-Theme))
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+### 추가로 해볼 작업 
+- 실제 Json 데이터를 파싱해서 UI로 표현해보기 
+- 로컬서버에서 대화방 및 채팅 목록 내리기 (localhost)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
