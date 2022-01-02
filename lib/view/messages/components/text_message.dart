@@ -12,17 +12,14 @@ class TextMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       // width: MediaQuery.of(context).size.width * 0.5,
-      color: MediaQuery.of(context).platformBrightness == Brightness.dark
-          ? Colors.white
-          : Colors.black,
+      width: MediaQuery.of(context).size.width * 0.55,
       padding: const EdgeInsets.symmetric(
           horizontal: defaultPadding * 0.75, vertical: defaultPadding / 2),
       decoration: BoxDecoration(
           color: primaryColor.withOpacity(message!.isSender ? 1 : 0.1),
           borderRadius: BorderRadius.circular(30)),
       child: Text(
-        // message!.text,
-        "test",
+        message!.text,
         style: TextStyle(
             color: message!.isSender
                 ? Colors.white

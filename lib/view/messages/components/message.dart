@@ -17,6 +17,7 @@ class Message extends StatelessWidget {
       switch (message.messageType) {
         case ChatMessageType.text:
           return TextMessage(message: message);
+          // return AudioMessage(message: message);
         case ChatMessageType.audio:
           return AudioMessage(message: message);
         case ChatMessageType.video:
@@ -29,7 +30,7 @@ class Message extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: defaultPadding),
       child: Row(
-        mainAxisAlignment:
+        mainAxisAlignment: 
             message.isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
         children: [
           if (!message.isSender) ...[
